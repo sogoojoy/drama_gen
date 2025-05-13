@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一句话短剧生成平台</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        .button-group a {
+            margin-right: 10px;
+            padding: 8px 16px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .gallery2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Short Drama Video Generation Platform</h1>
+
+        <p>
+            According to the sentence / script input by the user, it is automatically split into multiple storyboards to generate adjustable characters; according to the character, a consistent first frame of multiple storyboards is generated, and I2V video drive is performed to generate a long video with consistent and expressive characters in multiple storyboards.
+        </p>
+
+        <!-- Generated Videos -->
+        <h2>Character Consistency</h2>
+        <p>The consistency of characters between multiple shots has always been an important guarantee for the coherence of generated story videos. Our method maintains very good Character Consistency between different shots.</p>
+        <div class="middle">
+            <video controls><source src="short_drama\006.mp4" type="video/mp4"></video>
+        </div>
+
+        <!-- Generated Videos -->
+        <h2>Generated Short Drama Videos</h2>
+        <p>The video generation effect is flexible, with high prompt responsiveness and action range while maintaining a stable picture, and multi-resolution video generation with consistent characters between multiple shots is achieved. The overall short drama picture is full of storytelling, beauty, consistency and reasonable action.</p>
+        <div class="gallery2">
+            <video controls><source src="short_drama\001.mp4" type="video/mp4"></video>
+            <video controls><source src="short_drama\007.mp4" type="video/mp4"></video>
+            <video controls><source src="short_drama\003.mp4" type="video/mp4"></video>
+            <video controls><source src="short_drama\005.mp4" type="video/mp4"></video>
+            <video controls><source src="short_drama\002.mp4" type="video/mp4"></video>
+            <video controls><source src="short_drama\004.mp4" type="video/mp4"></video>
+        </div>
+
+        <!-- Realistic Talking Videos -->
+        <h2>IP & Funny Lora Videos</h2>
+        <p>
+            While maintaining a high degree of consistency with the character IP, the scenes and actions of the generated IP characters are highly generalized, prompt responsiveness is high, and special effects such as giant transformation and squashing ... are supported.</p>
+        <div class="gallery">
+            <video controls><source src="lora\017.mp4" type="video/mp4"></video>
+            <video controls><source src="lora\018.mp4" type="video/mp4"></video>
+            <video controls><source src="lora\019.mp4" type="video/mp4"></video>
+            <video controls><source src="lora\013.mp4" type="video/mp4"></video>
+            <video controls><source src="lora\015.mp4" type="video/mp4"></video>
+            <video controls><source src="lora\014.mp4" type="video/mp4"></video>
+            <video controls><source src="lora\006.mp4" type="video/mp4"></video>
+            <video controls><source src="lora\023.mp4" type="video/mp4"></video>
+            <video controls><source src="lora\002.mp4" type="video/mp4"></video>
+            <video controls><source src="lora\021.mp4" type="video/mp4"></video>
+            <video controls><source src="lora\003.mp4" type="video/mp4"></video>
+            <video controls><source src="lora\001.mp4" type="video/mp4"></video>
+            
+        </div>
+
+    </div>
+</body>
+</html>
